@@ -1,0 +1,343 @@
+==============================================================
+File generated on Thu Apr 04 19:00:24 CEST 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Thu Apr 04 19:00:50 CEST 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Thu Apr 04 19:06:32 CEST 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Thu Apr 04 19:07:25 CEST 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Thu Apr 04 21:37:32 CEST 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Thu Apr 04 21:48:49 CEST 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Thu Apr 04 21:49:45 CEST 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Thu Apr 04 21:53:12 CEST 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Thu Apr 04 21:53:54 CEST 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Thu Apr 04 21:55:56 CEST 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Thu Apr 04 21:58:17 CEST 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Thu Apr 04 21:58:57 CEST 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xa7a12tcsg325-1q'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'src/data_loader.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from src/data_loader.cpp:1:
+src/data_loader.cpp:20:19: error: no matching constructor for initialization of 'std::ifstream' (aka 'basic_ifstream<char>')
+    std::ifstream file(file_name);
+                  ^    ~~~~~~~~~
+/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream:459:7: note: candidate constructor not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const char *' for 1st argument; 
+      basic_ifstream(const char* __s, ios_base::openmode __mode = ios_base::in)
+      ^
+/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/fstream.tcc:968:25: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const std::basic_ifstream<char>' for 1st argument; 
+  extern template class basic_ifstream<char>;
+                        ^
+/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream:445:7: note: candidate constructor not viable: requires 0 arguments, but 1 was provided
+      basic_ifstream() : __istream_type(), _M_filebuf()
+      ^
+1 error generated.
+==============================================================
+File generated on Thu Apr 04 22:07:21 CEST 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xa7a12tcsg325-1q'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'src/data_loader.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from src/data_loader.cpp:1:
+src/data_loader.cpp:20:19: error: no matching constructor for initialization of 'std::ifstream' (aka 'basic_ifstream<char>')
+    std::ifstream file(file_name);
+                  ^    ~~~~~~~~~
+/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream:459:7: note: candidate constructor not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const char *' for 1st argument; 
+      basic_ifstream(const char* __s, ios_base::openmode __mode = ios_base::in)
+      ^
+/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/fstream.tcc:968:25: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const std::basic_ifstream<char>' for 1st argument; 
+  extern template class basic_ifstream<char>;
+                        ^
+/tools/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream:445:7: note: candidate constructor not viable: requires 0 arguments, but 1 was provided
+      basic_ifstream() : __istream_type(), _M_filebuf()
+      ^
+1 error generated.
+==============================================================
+File generated on Thu Apr 04 22:11:08 CEST 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Thu Apr 04 22:11:40 CEST 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xa7a12tcsg325-1q'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'src/CNNFunctions.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 446.406 ; gain = 0.086 ; free physical = 154 ; free virtual = 2268
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 446.406 ; gain = 0.086 ; free physical = 154 ; free virtual = 2268
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:05:52 ; elapsed = 00:05:54 . Memory (MB): peak = 574.320 ; gain = 128.000 ; free physical = 184 ; free virtual = 2250
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_float' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:348) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_float' into 'fp_struct<float>::to_ieee' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:369) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_int' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:342) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_isnan<float>' into 'generic_fmax<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:26) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_ieee' into 'generic_fmax<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:29) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_int' into 'generic_fmax<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:37) automatically.
+INFO: [XFORM 203-602] Inlining function 'fmaxf' into 'LoopOracle' (src/CNNFunctions.cpp:277) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:06:02 ; elapsed = 00:06:03 . Memory (MB): peak = 574.320 ; gain = 128.000 ; free physical = 159 ; free virtual = 2233
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1.1.1.1.1.1' (src/CNNFunctions.cpp:251) in function 'LoopOracle' automatically.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1.1.1.1' (src/CNNFunctions.cpp:251) in function 'LoopOracle' completely with a factor of 1.
+INFO: [XFORM 203-102] Partitioning array 'C1W1' in dimension 2 automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'C1B' (src/CNNFunctions.cpp:16) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'C2B' (src/CNNFunctions.cpp:47) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'FCB' (src/CNNFunctions.cpp:236) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'dataOut' (src/CNNFunctions.cpp:382) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'C1B' (src/CNNFunctions.cpp:16) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'C2B' (src/CNNFunctions.cpp:47) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'FCB' (src/CNNFunctions.cpp:236) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'dataOut' (src/CNNFunctions.cpp:382) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_float' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:348) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_float' into 'fp_struct<float>::to_ieee' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:369) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_int' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:342) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_isnan<float>' into 'generic_fmax<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:26) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_ieee' into 'generic_fmax<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:29) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_int' into 'generic_fmax<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:37) automatically.
+INFO: [XFORM 203-602] Inlining function 'fmaxf' into 'LoopOracle' (src/CNNFunctions.cpp:277) automatically.
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'DataOutMP1' in function 'LoopOracle' (src/CNNFunctions.cpp:274:29).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'DataOutMP2' in function 'LoopOracle' (src/CNNFunctions.cpp:316:29).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'DataOutMP3' in function 'LoopOracle' (src/CNNFunctions.cpp:358:29).
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:18:18) to (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:41:3) in function 'generic_fmax<float>'... converting 9 basic blocks.
+INFO: [XFORM 203-603] Inlining function 'aesl_mux_load.4floatP.i2' into 'LoopOracle' (src/CNNFunctions.cpp:291).
+INFO: [XFORM 203-11] Balancing expressions in function 'generic_fmax<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:18)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:06:13 ; elapsed = 00:06:15 . Memory (MB): peak = 574.320 ; gain = 128.000 ; free physical = 131 ; free virtual = 2205
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:06:39 ; elapsed = 00:06:41 . Memory (MB): peak = 638.320 ; gain = 192.000 ; free physical = 114 ; free virtual = 2185
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'LoopOracle' ...
+WARNING: [SYN 201-103] Legalizing function name 'generic_fmax<float>' to 'generic_fmax_float_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'generic_fmax_float_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 400.71 seconds; current allocated memory: 138.645 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 138.824 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'LoopOracle' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.43 seconds; current allocated memory: 141.182 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 47 loops have been pipelined in this design.
+==============================================================
+File generated on Thu Apr 04 22:41:19 CEST 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-e'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_bind -effort=medium
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_schedule -effort=medium
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_schedule -relax_ii_for_timing=0
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-10] Analyzing design file 'src/CNNFunctions.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 446.410 ; gain = 0.086 ; free physical = 177 ; free virtual = 1834
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 446.410 ; gain = 0.086 ; free physical = 177 ; free virtual = 1834
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:05:03 ; elapsed = 00:05:05 . Memory (MB): peak = 574.887 ; gain = 128.562 ; free physical = 385 ; free virtual = 1841
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_float' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:348) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_float' into 'fp_struct<float>::to_ieee' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:369) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_int' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:342) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_isnan<float>' into 'generic_fmax<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:26) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_ieee' into 'generic_fmax<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:29) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_int' into 'generic_fmax<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:37) automatically.
+INFO: [XFORM 203-602] Inlining function 'fmaxf' into 'LoopOracle' (src/CNNFunctions.cpp:277) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:05:12 ; elapsed = 00:05:14 . Memory (MB): peak = 574.887 ; gain = 128.562 ; free physical = 362 ; free virtual = 1827
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1.1.1.1.1.1' (src/CNNFunctions.cpp:251) in function 'LoopOracle' automatically.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1.1.1.1' (src/CNNFunctions.cpp:251) in function 'LoopOracle' completely with a factor of 1.
+INFO: [XFORM 203-102] Partitioning array 'C1W1' in dimension 2 automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'C1B' (src/CNNFunctions.cpp:16) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'C2B' (src/CNNFunctions.cpp:47) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'FCB' (src/CNNFunctions.cpp:236) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'dataOut' (src/CNNFunctions.cpp:382) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'C1B' (src/CNNFunctions.cpp:16) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'C2B' (src/CNNFunctions.cpp:47) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'FCB' (src/CNNFunctions.cpp:236) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'dataOut' (src/CNNFunctions.cpp:382) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_float' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:348) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_float' into 'fp_struct<float>::to_ieee' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:369) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_int' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:342) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_isnan<float>' into 'generic_fmax<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:26) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_ieee' into 'generic_fmax<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:29) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_int' into 'generic_fmax<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:37) automatically.
+INFO: [XFORM 203-602] Inlining function 'fmaxf' into 'LoopOracle' (src/CNNFunctions.cpp:277) automatically.
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'DataOutMP1' in function 'LoopOracle' (src/CNNFunctions.cpp:274:29).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'DataOutMP2' in function 'LoopOracle' (src/CNNFunctions.cpp:316:29).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'DataOutMP3' in function 'LoopOracle' (src/CNNFunctions.cpp:358:29).
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:18:18) to (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:41:3) in function 'generic_fmax<float>'... converting 9 basic blocks.
+INFO: [XFORM 203-603] Inlining function 'aesl_mux_load.4floatP.i2' into 'LoopOracle' (src/CNNFunctions.cpp:291).
+INFO: [XFORM 203-11] Balancing expressions in function 'generic_fmax<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:18)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:05:24 ; elapsed = 00:05:26 . Memory (MB): peak = 574.887 ; gain = 128.562 ; free physical = 350 ; free virtual = 1803
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:05:49 ; elapsed = 00:05:51 . Memory (MB): peak = 646.324 ; gain = 200.000 ; free physical = 360 ; free virtual = 1806
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'LoopOracle' ...
+WARNING: [SYN 201-103] Legalizing function name 'generic_fmax<float>' to 'generic_fmax_float_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'generic_fmax_float_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11]==============================================================
+File generated on Thu Apr 04 22:58:30 CEST 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-e'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-10] Analyzing design file 'src/CNNFunctions.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 446.402 ; gain = 0.086 ; free physical = 213 ; free virtual = 1629
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 446.402 ; gain = 0.086 ; free physical = 214 ; free virtual = 1629
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:06:20 ; elapsed = 00:06:22 . Memory (MB): peak = 574.953 ; gain = 128.637 ; free physical = 167 ; free virtual = 1559
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_float' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:348) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_float' into 'fp_struct<float>::to_ieee' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:369) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_int' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:342) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_isnan<float>' into 'generic_fmax<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:26) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_ieee' into 'generic_fmax<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:29) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_int' into 'generic_fmax<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:37) automatically.
+INFO: [XFORM 203-602] Inlining function 'fmaxf' into 'LoopOracle' (src/CNNFunctions.cpp:282) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:06:53 ; elapsed = 00:06:55 . Memory (MB): peak = 574.953 ; gain = 128.637 ; free physical = 264 ; free virtual = 1426
+INFO: [XFORM 203-502] Unrolling small iteration loop 'Conv1_CH_in_loop' (src/CNNFunctions.cpp:256) in function 'LoopOracle' automatically.
+INFO: [HLS 200-489] Unrolling loop 'Conv1_CH_in_loop' (src/CNNFunctions.cpp:256) in function 'LoopOracle' completely with a factor of 1.
+INFO: [XFORM 203-102] Partitioning array 'C1W1' in dimension 2 automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'C1B' (src/CNNFunctions.cpp:16) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'C2B' (src/CNNFunctions.cpp:47) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'FCB' (src/CNNFunctions.cpp:236) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'dataOut' (src/CNNFunctions.cpp:399) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'C1B' (src/CNNFunctions.cpp:16) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'C2B' (src/CNNFunctions.cpp:47) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'FCB' (src/CNNFunctions.cpp:236) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'dataOut' (src/CNNFunctions.cpp:399) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_float' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:348) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_float' into 'fp_struct<float>::to_ieee' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:369) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_int' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:342) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_isnan<float>' into 'generic_fmax<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:26) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_ieee' into 'generic_fmax<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:29) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_int' into 'generic_fmax<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:37) automatically.
+INFO: [XFORM 203-602] Inlining function 'fmaxf' into 'LoopOracle' (src/CNNFunctions.cpp:282) automatically.
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'DataOutMP1' in function 'LoopOracle' (src/CNNFunctions.cpp:279:29).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'DataOutMP2' in function 'LoopOracle' (src/CNNFunctions.cpp:327:29).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'DataOutMP3' in function 'LoopOracle' (src/CNNFunctions.cpp:375:29).
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:18:18) to (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:41:3) in function 'generic_fmax<float>'... converting 9 basic blocks.
+INFO: [XFORM 203-603] Inlining function 'aesl_mux_load.4floatP.i2' into 'LoopOracle' (src/CNNFunctions.cpp:299).
+INFO: [XFORM 203-11] Balancing expressions in function 'generic_fmax<float>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:18)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:07:27 ; elapsed = 00:07:29 . Memory (MB): peak = 574.953 ; gain = 128.637 ; free physical = 218 ; free virtual = 1387
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:08:01 ; elapsed = 00:08:03 . Memory (MB): peak = 654.316 ; gain = 208.000 ; free physical = 203 ; free virtual = 1446
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'LoopOracle' ...
+WARNING: [SYN 201-103] Legalizing function name 'generic_fmax<float>' to 'generic_fmax_float_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'generic_fmax_float_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.

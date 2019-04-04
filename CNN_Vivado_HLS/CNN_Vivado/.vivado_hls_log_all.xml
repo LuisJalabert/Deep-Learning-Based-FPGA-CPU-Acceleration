@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'generic_fmax&lt;float>' to 'generic_fmax_float_s'." projectName="CNN_Vivado" solutionName="solution1" date="2019-04-04T23:06:32.964+0200" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'DataOutMP3' in function 'LoopOracle' (src/CNNFunctions.cpp:375:29)." projectName="CNN_Vivado" solutionName="solution1" date="2019-04-04T23:05:58.695+0200" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'DataOutMP2' in function 'LoopOracle' (src/CNNFunctions.cpp:327:29)." projectName="CNN_Vivado" solutionName="solution1" date="2019-04-04T23:05:57.690+0200" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'DataOutMP1' in function 'LoopOracle' (src/CNNFunctions.cpp:279:29)." projectName="CNN_Vivado" solutionName="solution1" date="2019-04-04T23:05:57.677+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

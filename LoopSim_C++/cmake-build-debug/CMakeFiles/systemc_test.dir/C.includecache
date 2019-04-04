@@ -1,0 +1,250 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/check.h
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/global.h
+stdio.h
+-
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/handle.h
+global.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/global.h
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/label.h
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/msg.h
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/output.h
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/obj/asm.tab.c
+stdio.h
+-
+../inc/msg.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/msg.h
+../inc/handle.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/handle.h
+../inc/label.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/label.h
+../inc/global.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/global.h
+stddef.h
+-
+libintl.h
+-
+alloca.h
+-
+malloc.h
+-
+stdlib.h
+-
+stdlib.h
+-
+stdio.h
+-
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/obj/asm.tab.h
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/obj/lex.yy.c
+stdio.h
+-
+string.h
+-
+errno.h
+-
+stdlib.h
+-
+inttypes.h
+-
+string.h
+-
+../inc/msg.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/msg.h
+../inc/label.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/label.h
+../inc/global.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/global.h
+../inc/output.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/output.h
+../obj/asm.tab.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/obj/asm.tab.h
+unistd.h
+-
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/check.c
+stdio.h
+-
+limits.h
+-
+../inc/msg.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/msg.h
+../inc/global.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/global.h
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/handle_o.c
+stdio.h
+-
+../inc/msg.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/msg.h
+../inc/output.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/output.h
+../inc/check.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/check.h
+../inc/global.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/global.h
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/handle_oi.c
+stdio.h
+-
+../inc/msg.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/msg.h
+../inc/output.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/output.h
+../inc/check.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/check.h
+../inc/global.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/global.h
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/handle_om.c
+stdio.h
+-
+../inc/msg.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/msg.h
+../inc/output.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/output.h
+../inc/check.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/check.h
+../inc/global.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/global.h
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/handle_omi.c
+stdio.h
+-
+../inc/msg.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/msg.h
+../inc/output.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/output.h
+../inc/check.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/check.h
+../inc/global.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/global.h
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/handle_omr.c
+stdio.h
+-
+../inc/msg.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/msg.h
+../inc/output.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/output.h
+../inc/check.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/check.h
+../inc/global.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/global.h
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/handle_omr2.c
+stdio.h
+-
+../inc/msg.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/msg.h
+../inc/output.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/output.h
+../inc/check.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/check.h
+../inc/global.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/global.h
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/handle_or.c
+stdio.h
+-
+../inc/msg.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/msg.h
+../inc/output.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/output.h
+../inc/check.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/check.h
+../inc/global.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/global.h
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/handle_or2.c
+stdio.h
+-
+../inc/msg.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/msg.h
+../inc/output.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/output.h
+../inc/check.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/check.h
+../inc/global.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/global.h
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/handle_or2i.c
+stdio.h
+-
+../inc/msg.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/msg.h
+../inc/output.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/output.h
+../inc/check.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/check.h
+../inc/global.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/global.h
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/handle_or3.c
+stdio.h
+-
+../inc/msg.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/msg.h
+../inc/output.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/output.h
+../inc/check.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/check.h
+../inc/global.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/global.h
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/handle_ori.c
+stdio.h
+-
+../inc/msg.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/msg.h
+../inc/output.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/output.h
+../inc/check.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/check.h
+../inc/global.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/global.h
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/label.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+../inc/msg.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/msg.h
+../inc/label.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/label.h
+../inc/global.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/global.h
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/msg.c
+stdlib.h
+-
+stdio.h
+-
+../inc/global.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/global.h
+
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/output.c
+stdio.h
+-
+../inc/msg.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/msg.h
+../inc/global.h
+/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/global.h
+

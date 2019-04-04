@@ -1,0 +1,3 @@
+/home/luis/Desktop/Thesis/CNN C++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/luis/Desktop/Thesis/CNN C++/cmake-build-debug/CMakeFiles/CNN_Prj.dir
+/home/luis/Desktop/Thesis/CNN C++/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/CNN_Prj.dir/main.cpp.o  -o CNN_Prj 

@@ -1,0 +1,159 @@
+
+
+================================================================
+== Vivado HLS Report for 'generic_fmax_float_s'
+================================================================
+* Date:           Thu Apr  4 23:06:33 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        CNN_Vivado
+* Solution:       solution1
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     3.735|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.73>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%y_read = call float @_ssdm_op_Read.ap_auto.float(float %y) nounwind" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:18]   --->   Operation 2 'read' 'y_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%x_read = call float @_ssdm_op_Read.ap_auto.float(float %x) nounwind" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:18]   --->   Operation 3 'read' 'x_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%t_V_1 = bitcast float %x_read to i32" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:310->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:319->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:20]   --->   Operation 4 'bitcast' 't_V_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%p_Result_s = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %t_V_1, i32 31)" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:310->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:319->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:20]   --->   Operation 5 'bitselect' 'p_Result_s' <Predicate = (!sel_tmp7 & !sel_tmp4 & !or_cond2)> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%tmp_V = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %t_V_1, i32 23, i32 30)" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:317->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:319->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:20]   --->   Operation 6 'partselect' 'tmp_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%tmp_V_1 = trunc i32 %t_V_1 to i23" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:318->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:319->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:20]   --->   Operation 7 'trunc' 'tmp_V_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%t_V_2 = bitcast float %y_read to i32" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:310->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:319->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:21]   --->   Operation 8 'bitcast' 't_V_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns) (grouped into LUT with out node ymaggreater2)   --->   "%p_Result_6 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %t_V_2, i32 31)" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:310->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:319->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:21]   --->   Operation 9 'bitselect' 'p_Result_6' <Predicate = (!sel_tmp2 & !sel_tmp7 & !sel_tmp4 & !or_cond2)> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%tmp_V_2 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %t_V_2, i32 23, i32 30)" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:317->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:319->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:21]   --->   Operation 10 'partselect' 'tmp_V_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%tmp_V_3 = trunc i32 %t_V_2 to i23" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:318->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:319->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:21]   --->   Operation 11 'trunc' 'tmp_V_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.85ns)   --->   "%tmp = icmp eq i8 %tmp_V, 0" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:24]   --->   Operation 12 'icmp' 'tmp' <Predicate = true> <Delay = 0.85> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 13 [1/1] (0.97ns)   --->   "%tmp_3 = icmp eq i23 %tmp_V_1, 0" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:24]   --->   Operation 13 'icmp' 'tmp_3' <Predicate = true> <Delay = 0.97> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.85ns)   --->   "%tmp_4 = icmp eq i8 %tmp_V_2, 0" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:24]   --->   Operation 14 'icmp' 'tmp_4' <Predicate = true> <Delay = 0.85> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (0.97ns)   --->   "%tmp_5 = icmp eq i23 %tmp_V_3, 0" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:24]   --->   Operation 15 'icmp' 'tmp_5' <Predicate = true> <Delay = 0.97> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.00ns) (grouped into LUT with out node or_cond2)   --->   "%tmp1 = and i1 %tmp_3, %tmp_4" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:24]   --->   Operation 16 'and' 'tmp1' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.00ns) (grouped into LUT with out node or_cond2)   --->   "%tmp2 = and i1 %tmp, %tmp_5" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:24]   --->   Operation 17 'and' 'tmp2' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 18 [1/1] (0.33ns) (out node of the LUT)   --->   "%or_cond2 = and i1 %tmp2, %tmp1" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:24]   --->   Operation 18 'and' 'or_cond2' <Predicate = true> <Delay = 0.33> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 19 [1/1] (0.85ns)   --->   "%tmp_i = icmp eq i8 %tmp_V, -1" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_isnan.h:17->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:26]   --->   Operation 19 'icmp' 'tmp_i' <Predicate = (!or_cond2)> <Delay = 0.85> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (0.97ns)   --->   "%tmp_1_i = icmp ne i23 %tmp_V_1, 0" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_isnan.h:17->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:26]   --->   Operation 20 'icmp' 'tmp_1_i' <Predicate = (!or_cond2)> <Delay = 0.97> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.33ns)   --->   "%tmp_7_demorgan = and i1 %tmp_i, %tmp_1_i" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:26]   --->   Operation 21 'and' 'tmp_7_demorgan' <Predicate = (!or_cond2)> <Delay = 0.33> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (0.85ns)   --->   "%tmp_i1 = icmp eq i8 %tmp_V_2, -1" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_isnan.h:17->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:33]   --->   Operation 22 'icmp' 'tmp_i1' <Predicate = (!or_cond2)> <Delay = 0.85> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (0.97ns)   --->   "%tmp_1_i1 = icmp ne i23 %tmp_V_3, 0" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_isnan.h:17->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:33]   --->   Operation 23 'icmp' 'tmp_1_i1' <Predicate = (!or_cond2)> <Delay = 0.97> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 24 [1/1] (0.33ns)   --->   "%tmp_9_demorgan = and i1 %tmp_i1, %tmp_1_i1" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:33]   --->   Operation 24 'and' 'tmp_9_demorgan' <Predicate = (!or_cond2)> <Delay = 0.33> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (0.00ns) (grouped into LUT with out node res_2)   --->   "%p_Result_7 = call i23 @_ssdm_op_BitSet.i23.i23.i32.i1(i23 %tmp_V_1, i32 22, i1 true)" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:28]   --->   Operation 25 'bitset' 'p_Result_7' <Predicate = (sel_tmp2 & !sel_tmp7 & !sel_tmp4 & !or_cond2)> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns) (grouped into LUT with out node res_2)   --->   "%p_Result_8 = call i32 @_ssdm_op_BitConcatenate.i32.i1.i8.i23(i1 %p_Result_s, i8 -1, i23 %p_Result_7) nounwind" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:335->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:348->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:369->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:29]   --->   Operation 26 'bitconcatenate' 'p_Result_8' <Predicate = (sel_tmp2 & !sel_tmp7 & !sel_tmp4 & !or_cond2)> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns) (grouped into LUT with out node res_2)   --->   "%res = bitcast i32 %p_Result_8 to float" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:348->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:369->/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:29]   --->   Operation 27 'bitcast' 'res' <Predicate = (sel_tmp2 & !sel_tmp7 & !sel_tmp4 & !or_cond2)> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (1.11ns)   --->   "%ymaggreater = icmp slt i32 %t_V_1, %t_V_2" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:37]   --->   Operation 28 'icmp' 'ymaggreater' <Predicate = (!sel_tmp2 & !sel_tmp7 & !sel_tmp4 & !or_cond2)> <Delay = 1.11> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 29 [1/1] (0.00ns) (grouped into LUT with out node ymaggreater2)   --->   "%ymaggreater_1 = xor i1 %ymaggreater, true" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:38]   --->   Operation 29 'xor' 'ymaggreater_1' <Predicate = (p_Result_s & p_Result_6 & !sel_tmp2 & !sel_tmp7 & !sel_tmp4 & !or_cond2)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 30 [1/1] (0.00ns) (grouped into LUT with out node ymaggreater2)   --->   "%p_s = select i1 %p_Result_s, i1 %ymaggreater_1, i1 %ymaggreater" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:38]   --->   Operation 30 'select' 'p_s' <Predicate = (p_Result_6 & !sel_tmp2 & !sel_tmp7 & !sel_tmp4 & !or_cond2)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.52> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 31 [1/1] (0.33ns) (out node of the LUT)   --->   "%ymaggreater2 = select i1 %p_Result_6, i1 %p_s, i1 %ymaggreater" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:37]   --->   Operation 31 'select' 'ymaggreater2' <Predicate = (!sel_tmp2 & !sel_tmp7 & !sel_tmp4 & !or_cond2)> <Delay = 0.33> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.52> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 32 [1/1] (0.00ns) (grouped into LUT with out node res_2)   --->   "%res_1 = select i1 %ymaggreater2, float %y_read, float %x_read" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:39]   --->   Operation 32 'select' 'res_1' <Predicate = (!sel_tmp2 & !sel_tmp7 & !sel_tmp4 & !or_cond2)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.52> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 33 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp1)   --->   "%sel_tmp = xor i1 %or_cond2, true" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:24]   --->   Operation 33 'xor' 'sel_tmp' <Predicate = (!sel_tmp4 & !or_cond2)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 34 [1/1] (0.33ns) (out node of the LUT)   --->   "%sel_tmp1 = and i1 %tmp_7_demorgan, %sel_tmp" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:26]   --->   Operation 34 'and' 'sel_tmp1' <Predicate = (!sel_tmp4 & !or_cond2)> <Delay = 0.33> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node res_2)   --->   "%sel_tmp2 = and i1 %sel_tmp1, %tmp_9_demorgan" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:33]   --->   Operation 35 'and' 'sel_tmp2' <Predicate = (!sel_tmp7 & !sel_tmp4 & !or_cond2)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 36 [1/1] (0.52ns) (out node of the LUT)   --->   "%res_2 = select i1 %sel_tmp2, float %res, float %res_1" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:39]   --->   Operation 36 'select' 'res_2' <Predicate = (!sel_tmp7 & !sel_tmp4 & !or_cond2)> <Delay = 0.52> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.52> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 37 [1/1] (0.00ns) (grouped into LUT with out node res_4)   --->   "%sel_tmp6_demorgan = and i1 %tmp_i1, %tmp_1_i1" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:33]   --->   Operation 37 'and' 'sel_tmp6_demorgan' <Predicate = (!sel_tmp4 & !or_cond2)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 38 [1/1] (0.00ns) (grouped into LUT with out node res_4)   --->   "%sel_tmp6 = xor i1 %sel_tmp6_demorgan, true" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:33]   --->   Operation 38 'xor' 'sel_tmp6' <Predicate = (!sel_tmp4 & !or_cond2)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 39 [1/1] (0.00ns) (grouped into LUT with out node res_4)   --->   "%sel_tmp7 = and i1 %sel_tmp1, %sel_tmp6" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:33]   --->   Operation 39 'and' 'sel_tmp7' <Predicate = (!sel_tmp4 & !or_cond2)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 40 [1/1] (0.52ns) (out node of the LUT)   --->   "%res_4 = select i1 %sel_tmp7, float %y_read, float %res_2" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:39]   --->   Operation 40 'select' 'res_4' <Predicate = (!sel_tmp4 & !or_cond2)> <Delay = 0.52> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.52> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 41 [1/1] (0.00ns) (grouped into LUT with out node res_5)   --->   "%sel_tmp11_demorgan = or i1 %or_cond2, %tmp_7_demorgan" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:26]   --->   Operation 41 'or' 'sel_tmp11_demorgan' <Predicate = (!or_cond2)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 42 [1/1] (0.00ns) (grouped into LUT with out node res_5)   --->   "%sel_tmp3 = xor i1 %sel_tmp11_demorgan, true" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:26]   --->   Operation 42 'xor' 'sel_tmp3' <Predicate = (!or_cond2)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 43 [1/1] (0.00ns) (grouped into LUT with out node res_5)   --->   "%sel_tmp4 = and i1 %tmp_9_demorgan, %sel_tmp3" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:33]   --->   Operation 43 'and' 'sel_tmp4' <Predicate = (!or_cond2)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.33> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 44 [1/1] (0.52ns) (out node of the LUT)   --->   "%res_5 = select i1 %sel_tmp4, float %x_read, float %res_4" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:39]   --->   Operation 44 'select' 'res_5' <Predicate = (!or_cond2)> <Delay = 0.52> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.52> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 45 [1/1] (0.52ns) (out node of the LUT)   --->   "%res_3 = select i1 %or_cond2, float %y_read, float %res_5" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:39]   --->   Operation 45 'select' 'res_3' <Predicate = true> <Delay = 0.52> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.52> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "ret float %res_3" [/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:41]   --->   Operation 46 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 3.74ns
+The critical path consists of the following:
+	wire read on port 'y' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:18) [3]  (0 ns)
+	'icmp' operation ('tmp_5', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:24) [16]  (0.973 ns)
+	'and' operation ('tmp2', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:24) [18]  (0 ns)
+	'and' operation ('or_cond2', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:24) [19]  (0.331 ns)
+	'xor' operation ('sel_tmp', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:24) [34]  (0 ns)
+	'and' operation ('sel_tmp1', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:26) [35]  (0.331 ns)
+	'and' operation ('sel_tmp2', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:33) [36]  (0 ns)
+	'select' operation ('res', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:39) [37]  (0.525 ns)
+	'select' operation ('res', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:39) [41]  (0.525 ns)
+	'select' operation ('res', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:39) [45]  (0.525 ns)
+	'select' operation ('res', /wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_fmax.h:39) [46]  (0.525 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

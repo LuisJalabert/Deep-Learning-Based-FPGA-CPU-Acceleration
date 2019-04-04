@@ -1,0 +1,48 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/luis/Desktop/Thesis/CNN C++/CNNFunctions.hpp
+stdio.h
+-
+math.h
+-
+string.h
+-
+
+/home/luis/Desktop/Thesis/CNN C++/data_loader.hpp
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+fstream
+-
+sstream
+-
+iostream
+-
+string
+-
+
+/home/luis/Desktop/Thesis/CNN C++/main.cpp
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+CNNFunctions.hpp
+/home/luis/Desktop/Thesis/CNN C++/CNNFunctions.hpp
+data_loader.hpp
+/home/luis/Desktop/Thesis/CNN C++/data_loader.hpp
+dirent.h
+-
+dirent.h
+-
+

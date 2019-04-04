@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="LoopGen"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/luis/Desktop/Thesis/LoopSim C++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/luis/Desktop/Thesis/LoopSim\ C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/luis/Desktop/Thesis/LoopSim\ C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/luis/Desktop/Thesis/LoopSim\ C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/luis/Desktop/Thesis/LoopSim\ C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/luis/Desktop/Thesis/LoopSim C++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/luis/Desktop/Thesis/LoopSim\ C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/luis/Desktop/Thesis/LoopSim\ C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/luis/Desktop/Thesis/LoopSim\ C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/luis/Desktop/Thesis/LoopSim\ C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="systemc_test">
+				<Option output="/home/luis/Desktop/Thesis/LoopSim C++/cmake-build-debug/systemc_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/luis/Desktop/Thesis/LoopSim C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/luis/Desktop/Thesis/LoopSim C++/src"/>
+					<Add directory="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc"/>
+					<Add directory="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/obj"/>
+					<Add directory="/usr/local/systemc-2.3.3/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/luis/Desktop/Thesis/LoopSim\ C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 systemc_test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/luis/Desktop/Thesis/LoopSim\ C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/luis/Desktop/Thesis/LoopSim\ C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/luis/Desktop/Thesis/LoopSim\ C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="systemc_test/fast">
+				<Option output="/home/luis/Desktop/Thesis/LoopSim C++/cmake-build-debug/systemc_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/luis/Desktop/Thesis/LoopSim C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/luis/Desktop/Thesis/LoopSim C++/src"/>
+					<Add directory="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc"/>
+					<Add directory="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/obj"/>
+					<Add directory="/usr/local/systemc-2.3.3/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/luis/Desktop/Thesis/LoopSim\ C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 systemc_test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/luis/Desktop/Thesis/LoopSim\ C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/luis/Desktop/Thesis/LoopSim\ C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/luis/Desktop/Thesis/LoopSim\ C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/luis/Desktop/Thesis/LoopSim C++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/luis/Desktop/Thesis/LoopSim\ C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/luis/Desktop/Thesis/LoopSim\ C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/luis/Desktop/Thesis/LoopSim\ C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/luis/Desktop/Thesis/LoopSim\ C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/CPU_sim.cpp">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/CPU_sim.hpp">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/LT16memorymodel.cpp">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/LT16memorymodel.h">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/check.h">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/global.h">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/handle.h">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/label.h">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/msg.h">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/inc/output.h">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/obj/asm.tab.c">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/obj/asm.tab.h">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/obj/lex.yy.c">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/check.c">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/handle_o.c">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/handle_oi.c">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/handle_om.c">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/handle_omi.c">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/handle_omr.c">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/handle_omr2.c">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/handle_or.c">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/handle_or2.c">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/handle_or2i.c">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/handle_or3.c">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/handle_ori.c">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/label.c">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/msg.c">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/assembler/src/output.c">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/instruction_cells.cpp">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/instruction_cells.hpp">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/loop_gen.cpp">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/loop_gen.hpp">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/main.cpp">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/main.hpp">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/src/memport.h">
+			<Option target="systemc_test"/>
+		</Unit>
+		<Unit filename="/home/luis/Desktop/Thesis/LoopSim C++/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
